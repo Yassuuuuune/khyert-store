@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'title'                => 'Mon panier',
+    'empty'                => 'Votre panier est vide',
+    'empty_hint'           => 'Parcourez notre boutique et ajoutez vos produits préférés.',
+    'continue_shopping'    => 'Continuer mes achats',
+    'product'              => 'Produit',
+    'unit_price'           => 'Prix unitaire',
+    'quantity'             => 'Quantité',
+    'subtotal'             => 'Sous-total',
+    'remove'               => 'Retirer',
+    'clear_cart'           => 'Vider le panier',
+    'order_summary'        => 'Récapitulatif',
+    'items_count'          => ':count article(s)',
+    'shipping'             => 'Livraison',
+    'free_shipping'        => 'Offerte',
+    'free_shipping_hint'   => 'Livraison offerte à partir de 500 MAD.',
+    'checkout'             => 'Passer la commande',
+    'product_unavailable'  => 'Ce produit n\'est plus disponible.',
+    'insufficient_stock'   => 'Stock insuffisant : il ne reste que :available unité(s).',
+    'added_successfully'   => 'Produit ajouté au panier.',
+    'updated_successfully' => 'Panier mis à jour.',
+    'removed_successfully' => 'Produit retiré du panier.',
+    'cleared_successfully' => 'Panier vidé.',
+
+    'total'          => 'Total',
+    'item'           => 'Article',
+    'clear_confirm'  => 'Vider tout le panier ?',
+    'remove_confirm' => 'Retirer cet article du panier ?',
+    'shipping_note'  => 'Les frais de livraison sont calculés à l\'étape suivante.',
+    'browse'         => 'Parcourir la boutique',
+];

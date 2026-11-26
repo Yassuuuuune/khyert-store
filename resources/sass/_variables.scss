@@ -1,0 +1,72 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// SAHARA CONNECT — Brand design tokens & Bootstrap variable overrides
+// This file is imported BEFORE Bootstrap so the values below override the
+// framework defaults.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ── Brand palette ───────────────────────────────────────────────────────────
+$sc-sand-50:   #FCFAF6;
+$sc-sand-100:  #F6F0E7;
+$sc-sand-200:  #EDE2D2;
+$sc-sand-300:  #E0D0B8;
+
+$sc-brown-900: #33251A;   // deep desert brown (ink)
+$sc-brown-800: #43301F;
+$sc-brown-700: #5A4230;
+$sc-brown-600: #74573F;
+
+$sc-terracotta:       #C0693F;
+$sc-terracotta-dark:  #A3542F;
+$sc-terracotta-light: #D98A62;
+
+$sc-gold:       #D9A441;
+$sc-gold-light: #E7C273;
+$sc-gold-dark:  #B98526;
+
+$sc-olive:      #6E7F58;   // subtle secondary accent
+$sc-oasis:      #2E7D74;   // teal oasis accent
+
+// ── Semantic mapping to Bootstrap ───────────────────────────────────────────
+$primary:   $sc-terracotta;
+$secondary: $sc-brown-700;
+$success:   #3F8F5E;
+$info:      $sc-oasis;
+$warning:   $sc-gold;
+$danger:    #C0463F;
+$dark:      $sc-brown-900;
+$light:     $sc-sand-100;
+
+// ── Body / typography ───────────────────────────────────────────────────────
+$body-bg:        $sc-sand-50;
+$body-color:     $sc-brown-800;
+$font-family-sans-serif: 'Inter', 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+$font-family-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+$font-size-base: 0.975rem;
+$line-height-base: 1.65;
+
+// ── Shapes & elevation ──────────────────────────────────────────────────────
+$border-radius:    .65rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.5rem;
+$border-color:     $sc-sand-200;
+
+$box-shadow-sm: 0 2px 8px rgba(51, 37, 26, .06);
+$box-shadow:    0 8px 28px rgba(51, 37, 26, .10);
+$box-shadow-lg: 0 18px 48px rgba(51, 37, 26, .16);
+
+// ── Navbar / links ──────────────────────────────────────────────────────────
+$link-color:       $sc-terracotta-dark;
+$link-hover-color: $sc-brown-900;
+
+// ── Buttons ─────────────────────────────────────────────────────────────────
+$btn-font-weight: 600;
+$btn-padding-y: .6rem;
+$btn-padding-x: 1.25rem;
+
+// ── Inputs ──────────────────────────────────────────────────────────────────
+$input-bg: #fff;
+$input-border-color: $sc-sand-300;
+$input-focus-border-color: $sc-terracotta-light;
+$input-focus-box-shadow: 0 0 0 .2rem rgba(192, 105, 63, .18);
+$input-padding-y: .6rem;
