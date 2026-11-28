@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'title'                => 'My cart',
+    'empty'                => 'Your cart is empty',
+    'empty_hint'           => 'Browse our shop and add your favorite products.',
+    'continue_shopping'    => 'Continue shopping',
+    'product'              => 'Product',
+    'unit_price'           => 'Unit price',
+    'quantity'             => 'Quantity',
+    'subtotal'             => 'Subtotal',
+    'remove'               => 'Remove',
+    'clear_cart'           => 'Clear cart',
+    'order_summary'        => 'Summary',
+    'items_count'          => ':count item(s)',
+    'shipping'             => 'Shipping',
+    'free_shipping'        => 'Free',
+    'free_shipping_hint'   => 'Free shipping from 500 MAD.',
+    'checkout'             => 'Checkout',
+    'product_unavailable'  => 'This product is no longer available.',
+    'insufficient_stock'   => 'Insufficient stock: only :available unit(s) left.',
+    'added_successfully'   => 'Product added to cart.',
+    'updated_successfully' => 'Cart updated.',
+    'removed_successfully' => 'Product removed from cart.',
+    'cleared_successfully' => 'Cart cleared.',
+
+    'total'          => 'Total',
+    'item'           => 'Item',
+    'clear_confirm'  => 'Clear the entire cart?',
+    'remove_confirm' => 'Remove this item from the cart?',
+    'shipping_note'  => 'Shipping fees are calculated at the next step.',
+    'browse'         => 'Browse the shop',
+];

@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'title'                => 'سلتي',
+    'empty'                => 'سلتك فارغة',
+    'empty_hint'           => 'تصفّح متجرنا وأضف منتجاتك المفضلة.',
+    'continue_shopping'    => 'متابعة التسوق',
+    'product'              => 'المنتج',
+    'unit_price'           => 'سعر الوحدة',
+    'quantity'             => 'الكمية',
+    'subtotal'             => 'المجموع الفرعي',
+    'remove'               => 'إزالة',
+    'clear_cart'           => 'إفراغ السلة',
+    'order_summary'        => 'ملخّص الطلب',
+    'items_count'          => ':count منتج',
+    'shipping'             => 'التوصيل',
+    'free_shipping'        => 'مجاني',
+    'free_shipping_hint'   => 'توصيل مجاني ابتداءً من 500 درهم.',
+    'checkout'             => 'إتمام الطلب',
+    'product_unavailable'  => 'هذا المنتج لم يعد متاحًا.',
+    'insufficient_stock'   => 'المخزون غير كافٍ: لم يتبقَّ سوى :available وحدة.',
+    'added_successfully'   => 'تمت إضافة المنتج إلى السلة.',
+    'updated_successfully' => 'تم تحديث السلة.',
+    'removed_successfully' => 'تمت إزالة المنتج من السلة.',
+    'cleared_successfully' => 'تم إفراغ السلة.',
+
+    'total'          => 'الإجمالي',
+    'item'           => 'المنتج',
+    'clear_confirm'  => 'إفراغ السلة بالكامل؟',
+    'remove_confirm' => 'إزالة هذا المنتج من السلة؟',
+    'shipping_note'  => 'تُحسب تكاليف التوصيل في الخطوة التالية.',
+    'browse'         => 'تصفّح المتجر',
+];

@@ -55,7 +55,7 @@
         </div>
 
         <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-            <span>&copy; {{ date('Y') }} {{ config('app.name', 'Sahara Connect') }}. {{ __('footer.rights') }}</span>
+            <span>&copy; {{ date('Y') }} {{ 'KHYERT STORE' }}. {{ __('footer.rights') }}</span>
             <span class="d-flex gap-3">
                 <a href="{{ route('pages.about') }}">{{ __('nav.about') }}</a>
                 <a href="{{ route('pages.contact') }}">{{ __('nav.contact') }}</a>

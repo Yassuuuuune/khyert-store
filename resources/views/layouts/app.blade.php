@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', __('site.tagline')) — {{ config('app.name', 'Sahara Connect') }}</title>
+    <title>@yield('title', __('site.tagline')) — {{ 'KHYERT STORE' }}</title>
     <meta name="description" content="@yield('meta_description', __('site.meta_default'))">
     @hasSection('meta_keywords')
         <meta name="keywords" content="@yield('meta_keywords')">
@@ -13,8 +13,8 @@
 
     {{-- Open Graph --}}
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="{{ config('app.name', 'Sahara Connect') }}">
-    <meta property="og:title" content="@yield('og_title', config('app.name', 'Sahara Connect'))">
+    <meta property="og:site_name" content="{{ 'KHYERT STORE' }}">
+    <meta property="og:title" content="@yield('og_title', 'KHYERT STORE')">
     <meta property="og:description" content="@yield('meta_description', __('site.meta_default'))">
     @hasSection('og_image')
         <meta property="og:image" content="@yield('og_image')">

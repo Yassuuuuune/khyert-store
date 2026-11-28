@@ -90,6 +90,39 @@
 </section>
 
 {{-- ── 2. FEATURED PRODUCTS ─────────────────────────────────────────────── --}}
+{{-- Reference inspired service shortcuts and destination ribbon --}}
+<section class="home-shortcuts" aria-label="{{ __('home.discover_title') }}">
+    <div class="container">
+        <div class="shortcut-grid">
+            <a class="shortcut-card shortcut-market" href="{{ route('products.index') }}">
+                <span class="shortcut-icon"><i class="bi bi-cart3"></i></span>
+                <span class="shortcut-copy"><strong>{{ __('nav.shop') }}</strong><small>{{ __('home.featured_products_sub') }}</small><b>{{ __('home.hero_cta_shop') }} <i class="bi bi-arrow-right"></i></b></span>
+            </a>
+            <a class="shortcut-card shortcut-tourism" href="{{ route('tourism.index') }}">
+                <span class="shortcut-icon"><i class="bi bi-airplane"></i></span>
+                <span class="shortcut-copy"><strong>{{ __('nav.tourism') }}</strong><small>{{ __('home.featured_destinations_sub') }}</small><b>{{ __('home.hero_cta_tourism') }} <i class="bi bi-arrow-right"></i></b></span>
+            </a>
+            <a class="shortcut-card shortcut-affiliate" href="{{ route('pages.become-affiliate') }}">
+                <span class="shortcut-icon"><i class="bi bi-people"></i></span>
+                <span class="shortcut-copy"><strong>{{ __('nav.become_affiliate') }}</strong><small>{{ __('home.become_affiliate_text') }}</small><b>{{ __('home.become_affiliate_cta') }} <i class="bi bi-arrow-right"></i></b></span>
+            </a>
+            <a class="shortcut-card shortcut-experience" href="{{ route('pages.become-seller') }}">
+                <span class="shortcut-icon"><i class="bi bi-star"></i></span>
+                <span class="shortcut-copy"><strong>{{ __('nav.become_seller') }}</strong><small>{{ __('home.become_seller_text') }}</small><b>{{ __('home.become_seller_cta') }} <i class="bi bi-arrow-right"></i></b></span>
+            </a>
+        </div>
+        @if ($featuredDestinations->isNotEmpty())
+            <nav class="region-ribbon" aria-label="{{ __('home.featured_destinations') }}">
+                <span class="region-label"><i class="bi bi-geo-alt-fill"></i> {{ __('home.featured_destinations') }}</span>
+                @foreach ($featuredDestinations->take(5) as $destination)
+                    <a class="region-pill" href="{{ route('tourism.show', $destination) }}"><span class="region-dot"><i class="bi bi-sun"></i></span>{{ $destination->localized_name }}</a>
+                @endforeach
+                <a class="region-more" href="{{ route('tourism.index') }}">{{ __('home.see_all_destinations') }} <i class="bi bi-arrow-right"></i></a>
+            </nav>
+        @endif
+    </div>
+</section>
+
 <section class="section reveal">
     <div class="container">
         <div class="row align-items-end mb-4">

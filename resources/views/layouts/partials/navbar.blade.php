@@ -6,12 +6,10 @@
 <nav class="navbar navbar-expand-lg navbar-sc sticky-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
-            <span class="d-inline-grid" style="width:42px;height:42px;place-items:center;border-radius:12px;background:linear-gradient(135deg,var(--sc-terracotta),var(--sc-gold));color:#fff;font-size:1.3rem;">
-                <i class="bi bi-brightness-high-fill"></i>
-            </span>
-            <span>
-                SAHARA <span class="brand-mark">CONNECT</span>
-                <small>{{ __('site.tagline_short') }}</small>
+            <span class="kh-logo" aria-hidden="true"><i class="bi bi-bag"></i><span class="kh-dune"></span></span>
+            <span class="kh-brand-copy">
+                <span class="kh-brand-name">KHYERT STORE</span>
+                <small>DISCOVER / SHOP / EXPLORE</small>
             </span>
         </a>
 
@@ -20,6 +18,18 @@
         </button>
 
         <div class="collapse navbar-collapse" id="scNavbar">
+            <form method="GET" action="{{ route('products.search') }}" class="kh-nav-search" role="search">
+                <label for="kh-nav-q" class="visually-hidden">{{ __('home.search_label') }}</label>
+                <input id="kh-nav-q" type="search" name="q" value="{{ request('q') }}" placeholder="{{ __('home.hero_search_placeholder') }}">
+                <label for="kh-nav-category" class="visually-hidden">{{ __('home.all_categories') }}</label>
+                <select id="kh-nav-category" name="category" aria-label="{{ __('home.all_categories') }}">
+                    <option value="">{{ __('home.all_categories') }}</option>
+                    @foreach (($popularCategories ?? collect()) as $category)
+                        <option value="{{ $category->slug }}" @selected(request('category') === $category->slug)>{{ $category->localized_name }}</option>
+                    @endforeach
+                </select>
+                <button type="submit" aria-label="{{ __('home.search_label') }}"><i class="bi bi-search"></i></button>
+            </form>
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">{{ __('nav.home') }}</a>
